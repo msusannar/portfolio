@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Course Design | Marisa Ruiz</title>
-<link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Design Examples | Marisa Ruiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
 <body>
-<header><h1>Course Design</h1></header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="course-design.html">Course Design</a>
-  <a href="media-tech.html">Media & Tech</a>
-  <a href="faculty-dev.html">Faculty Development</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<main><p>Content for Course Design will appear here.</p></main>
-  <section id="highlights">
-      <h2>Course Design Examples</h2>
-      <div class="portfolio-grid">
-        <a href="course-design.html" class="portfolio-card">
-          <img src="images/coursedesignexamples.png" alt="Course Design Thumbnail">
-          <h3>ARC 111</h3>
-        </a>
-        <a href="media-tech.html" class="portfolio-card">
-          <img src="images/media-tech.jpg" alt="Instructional Media Thumbnail">
-          <h3>AME 394</h3>
-        </a>
-        <a href="faculty-dev.html" class="portfolio-card">
-          <img src="images/faculty-dev.jpg" alt="Faculty Development Thumbnail">
-          <h3>ARC 494</h3>
-        </a>
+  <header><h1>Course Design Examples</h1></header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="course-design.html">Course Design</a>
+    <a href="media-tech.html">Media & Tech</a>
+    <a href="faculty-dev.html">Faculty Development</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section class="project">
+      <h2>ARC 111: Architecture of Architecture I</h2>
+      <p class="overview">Overview text goes here.</p>
+      <div class="gallery" data-gallery>
+        <img src="images/arc111-1.jpg" alt="ARC 111 Screenshot 1" class="active">
+        <img src="images/arc111-2.jpg" alt="ARC 111 Screenshot 2">
+        <img src="images/arc111-3.jpg" alt="ARC 111 Screenshot 3">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
     </section>
-<footer><p>© 2025 Marisa Ruiz</p></footer>
-</body></html>
+
+    <section class="project">
+      <h2>AME 294: History of Electronic Music</h2>
+      <p class="overview">Overview text goes here.</p>
+      <div class="gallery" data-gallery>
+        <img src="images/ame294-1.jpg" alt="AME 294 Screenshot 1" class="active">
+        <img src="images/ame294-2.jpg" alt="AME 294 Screenshot 2">
+        <img src="images/ame294-3.jpg" alt="AME 294 Screenshot 3">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project">
+      <h2>ARC 494: Architecture of Success — Empathy</h2>
+      <p class="overview">Overview text goes here.</p>
+      <div class="gallery" data-gallery>
+        <img src="images/arc494-1.jpg" alt="ARC 494 Screenshot 1" class="active">
+        <img src="images/arc494-2.jpg" alt="ARC 494 Screenshot 2">
+        <img src="images/arc494-3.jpg" alt="ARC 494 Screenshot 3">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+  </main>
+  <footer><p>© 2025 Marisa Ruiz</p></footer>
+</body>
+</html>
