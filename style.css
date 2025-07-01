@@ -1,0 +1,122 @@
+/* Modern portfolio styling inspired by Squarespace/Wix aesthetics */
+:root {
+  --primary-color: #1A1A1A;
+  --accent-color: #0057FF;
+  --background-color: #FFFFFF;
+  --text-color: #222222;
+  --muted-color: #666666;
+  --light-gray: #F5F5F5;
+  --white: #ffffff;
+  --border-radius: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --transition: 0.3s ease-in-out;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+header {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.1rem;
+  color: var(--muted-color);
+}
+nav {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: background var(--transition);
+}
+nav a:hover,
+nav a:focus {
+  background-color: var(--light-gray);
+  outline: none;
+}
+main, section {
+  max-width: 1080px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+section + section {
+  margin-top: 5rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer {
+  background: var(--light-gray);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.portfolio-card {
+  flex: 1 1 30%;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.portfolio-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
