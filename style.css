@@ -120,3 +120,42 @@ footer {
   padding: 1rem;
   font-size: 1.1rem;
 }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-card h3 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.caption {
+  padding: 0 1rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
